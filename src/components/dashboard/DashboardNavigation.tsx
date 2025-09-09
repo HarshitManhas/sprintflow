@@ -7,6 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Link } from "react-router-dom";
 
 const DashboardNavigation = () => {
   const { user, signOut } = useAuth();
@@ -16,11 +17,14 @@ const DashboardNavigation = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <h1 className="text-2xl font-bold text-brand-blue">SprintFlow</h1>
+            <h1 className="text-2xl font-bold text-brand-blue">
+              <Link to={"/"}>SprintFlow</Link>
+            </h1>
             <div className="hidden md:flex items-center space-x-6 ml-8">
               <Button
                 variant="ghost"
                 className="text-gray-600 hover:text-brand-blue"
+                asChild
               >
                 Dashboard
               </Button>
