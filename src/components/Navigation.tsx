@@ -22,21 +22,21 @@ const Navigation = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
-            </a>
-            <a href="#" className="nav-link">
+            </Link>
+            <Link to="/features" className="nav-link">
               Features
-            </a>
-            <a href="#" className="nav-link">
+            </Link>
+            <Link to="/pricing" className="nav-link">
               Pricing
-            </a>
-            <a href="#" className="nav-link">
+            </Link>
+            <Link to="/about" className="nav-link">
               About
-            </a>
-            <a href="#" className="nav-link">
+            </Link>
+            <Link to="/contact" className="nav-link">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Action Buttons */}
